@@ -9,7 +9,7 @@ export default function Home() {
 
   const displayWeek = weekClass === styles.thisWeek ? <ThisWeek /> : <NextWeek />;
 
-  const handleClick = (button) => {
+  const handleClick = (button: string) => {
     if (button === "nextButton") {
       setWeekClass(styles.nextWeek);
     } else {
